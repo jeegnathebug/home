@@ -1,0 +1,427 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+	color: rgba(255,255,255,0.9);
+	text-decoration: none;
+	list-style-type: none;
+}
+
+/* Loading screen */
+#preloader {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+	background-color: rgb(37,36,44);
+	color: rgb(255,255,255);
+}
+
+#preloader .txt {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+#preloader .txt-perc {
+	font-size: 35px;
+	font-family: "Josefin Slab";
+	opacity: 1;
+	margin: 0 0 6px 0;
+	max-width: 400px;
+	text-align: center;
+}
+
+#preloader .progress {
+	width: 100px;
+	height: 3px;
+	background-color: rgba(255, 255, 255, 0.2);
+	margin: 0 auto 15px auto;
+}
+
+#preloader .progress span {
+	display: block;
+	width: 0;
+	height: 100%;
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
+.is-loading {
+	overflow: hidden;
+}
+
+/* Header, footer */
+.header, .footer {
+	background-color: rgb(37,36,44);
+}
+
+/* Header */
+.header {
+	text-align: center;
+
+	height: 20vh;
+	width: 100%;
+}
+
+.header-title {
+	line-height: 20vh;
+
+	font-size: 8vh;
+	font-family: "Josefin Slab";
+	text-decoration: none;
+
+	height: 20vh;
+}
+
+.t1 {
+	font-weight: 700;
+	color: rgb(236,63,140);
+}
+
+.t2 {
+	font-weight: 400;
+	color: rgb(57,177,198);
+}
+
+/* Body */
+body {
+	background-color: rgb(50,49,59);
+
+	font-family: "Josefin Sans";
+}
+
+hr {
+    border-style: solid;
+    border-width: 0.1vh;
+    border-color: rgb(55,175,195);
+}
+
+/* Font sizes */
+h1 {
+	font-size: 5vh;
+	text-align: center;
+}
+
+/* Content */
+.content {
+	margin-left: 10vw;
+	margin-right: 20vw;
+}
+
+.content header {
+	padding-top: 5vh;
+	padding-bottom: 2.5vh;
+}
+
+.content article {
+	padding-top: 5vh;
+	padding-bottom: 10vh;
+}
+
+.content section {
+	padding: 2.5vh 0;
+
+	font-size: 2.5vh;
+	text-align: justify;
+}
+
+.content h1 {
+	font-size: 5vh;
+	text-align: right;
+}
+
+.content p {
+	padding: 0.5vh 0;
+}
+
+.content a {
+	text-decoration: underline;
+}
+
+.content a:hover {
+	color: rgb(35,225,115);
+	text-decoration: underline;
+
+	cursor: pointer;
+}
+
+#intro {
+	min-height: 80vh;
+}
+
+.content-block {
+	visibility: hidden;
+	opacity: 0;
+}
+
+.content table {
+	font-size: 2.5vh;
+
+	width: 100%;
+}
+
+.content table .info {
+	text-align: left;
+}
+
+.content tr {
+	text-align: right;
+}
+
+.content th {
+	padding: 0.5vh 0.5vw;
+
+	font-weight: bold;
+	font-size: 3vh;
+}
+
+.content td {
+	padding: 0.5vh 0.5vw;
+}
+
+.date {
+	text-align: right;
+}
+
+/* Image */
+.picture {
+	height: 27.5vh;
+	width: 27.5vh;
+
+	float: right;
+
+	border-radius: 100%;
+	border-style: solid;
+	border-width: 0.4vh;
+	border-color: rgb(55,175,195);
+
+	margin: 1vh 1vw;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    z-index: 2;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+	position: relative;
+
+    background-color: rgb(250,250,250);
+
+    margin: 10vh 10vw;
+    height: 80vh;
+    width: 80vw;
+
+    border-radius: 2vh;
+
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from { top: -300px; opacity: 0 } 
+    to { top: 0; opacity: 1 }
+}
+
+@keyframes animatetop {
+    from { top: -300px; opacity: 0 }
+    to { top: 0; opacity: 1 }
+}
+
+.modal-content iframe {
+	margin: 5%;
+	height: 85%;
+	width: 90%;
+}
+
+.modal-content .btnClose {
+    color: rgb(200,200,200);
+
+    position: fixed;
+    top: 3vh;
+    right: 2vw;
+
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.modal-content .btnClose:hover,
+.modal-content .btnClose:focus {
+    color: rgba(200,200,200,0.5);
+    cursor: pointer;
+}
+
+/* Navigation */
+.nav {
+	z-index: 1;
+
+	min-width: 15vw;
+
+	position: fixed;
+	top: 40vh;
+	right: 2vw;
+
+	font-size: 2.5vh;
+	text-align: right;
+}
+
+.nav-item span {
+	color: rgb(177,177,177);
+
+	-moz-transition: opacity 0.3s ease-in-out;
+	-webkit-transition: opacity 0.3s ease-in-out;
+	-o-transition: opacity 0.3s ease-in-out;
+	transition: opacity 0.3s ease-in-out;
+}
+
+.nav-item-text {
+	opacity: 0;
+}
+
+.nav-item:hover .nav-item-text {
+	opacity: 1;
+}
+
+/* Footer */
+.footer {
+	height: 15vh;
+}
+
+/* Social links */
+.social-links {
+	width: 30%;
+	height: 9vh;
+
+	margin: auto;
+}
+
+.social-link {
+	padding: 2vh 2vw;
+
+	float: left;
+}
+
+.social-icon {
+	min-height: 4vh;
+	max-height: 4vh;
+	min-width: 4vh;
+	max-width: 4vh;
+
+	-webkit-filter: saturate(0%);
+	filter: saturate(0%);
+
+	-moz-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+	-webkit-filter: saturate(100%);
+	filter: saturate(100%);
+}
+
+/* Copyright notice */
+.copyright {
+	height: 6vh;
+	width: 100%;
+
+	font-family: "Lucida Console", monospace;
+	font-size: 1.5vh;
+
+	text-align: center;
+}
+
+.copyright a {
+	text-decoration: underline;
+}
+
+.copyright a:hover {
+	color: rgb(35,225,115);
+}
+
+/* Slide up animation */
+.slideInUp {
+	visibility: hidden;
+	opacity: 0;
+
+	-webkit-transition: all 0.7s ease-out;
+	transition: all 0.7s ease-out;
+	-webkit-transform: translate3d(0, 50px, 0);
+	transform: translate3d(0, 50px, 0);
+}
+
+.is-active .slideInUp {
+	visibility: visible;
+	opacity: 1;
+
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+
+.slideInUp.slideInUp2 {
+	-webkit-transition-delay: 0.2s;
+	transition-delay: 0.2s;
+}
+
+/* When section is in screen */
+.content-block.is-active {
+	visibility: visible;
+	opacity: 1;
+}
+
+/* highlight color */
+::selection {
+	background-color: rgb(236,63,140);
+    color: rgb(255,255,255);
+}
+
+::-moz-selection {
+	background-color: rgb(236,63,140);
+    color: rgb(255,255,255);
+}
+
+::-o-selection {
+	background-color: rgb(236,63,140);
+    color: rgb(255,255,255);
+}
+
+::-webkit-selection {
+	background-color: rgb(236,63,140);
+    color: rgb(252,255,255);
+}
+
+/* Sick scrollbar stuff */
+::-webkit-scrollbar {
+	width: 7px;
+	height: 7px;
+}
+
+::-webkit-scrollbar-track {
+	background-color: rgba(0,0,0,0.2);
+}
+
+::-webkit-scrollbar-thumb {
+	background: rgba(236,63,140,0.8);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(236,63,140,0.4);
+}
