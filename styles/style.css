@@ -100,20 +100,16 @@ hr {
     border-color: rgb(55,175,195);
 }
 
-/* Font sizes */
-h1 {
-	font-size: 5vh;
-	text-align: center;
-}
-
 /* Content */
 .content {
 	margin-left: 10vw;
 	margin-right: 20vw;
+
+	font-size: 25px;
 }
 
 .content header {
-	padding-top: 5vh;
+	padding-top: 2.5vh;
 	padding-bottom: 2.5vh;
 }
 
@@ -125,12 +121,13 @@ h1 {
 .content section {
 	padding: 2.5vh 0;
 
-	font-size: 2.5vh;
 	text-align: justify;
 }
 
 .content h1 {
 	font-size: 5vh;
+	line-height: 6vh;
+
 	text-align: right;
 }
 
@@ -159,24 +156,23 @@ h1 {
 }
 
 .content table {
-	font-size: 2.5vh;
-
 	width: 100%;
-}
 
-.content table .info {
-	text-align: left;
+	font-size: 25px;
 }
 
 .content tr {
 	text-align: right;
 }
 
+.content table .info {
+	text-align: left;
+}
+
 .content th {
 	padding: 0.5vh 0.5vw;
 
 	font-weight: bold;
-	font-size: 3vh;
 }
 
 .content td {
@@ -278,7 +274,7 @@ h1 {
 	top: 40vh;
 	right: 2vw;
 
-	font-size: 2.5vh;
+	font-size: 25px;
 	text-align: right;
 }
 
@@ -316,6 +312,7 @@ h1 {
 	padding: 2vh 2vw;
 
 	float: left;
+	width: 25%;
 }
 
 .social-icon {
@@ -344,7 +341,7 @@ h1 {
 	width: 100%;
 
 	font-family: "Lucida Console", monospace;
-	font-size: 1.5vh;
+	font-size: 15px;
 
 	text-align: center;
 }
