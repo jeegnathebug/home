@@ -32,29 +32,12 @@
 		})
 	}
 
-	var	counter = 0,
-		max = e("#intro").length,
-		current_progress = 0;
+	var	counter = 0;
+	var max = e(".intro").length;
+	var current_progress = 0;
 
 	e(".picture").imagesLoaded().progress(load);
 
 	var timeline = new TimelineMax({paused:!0,onUpdate:round,onComplete:finished});
 	timeline.to(e(".progress span"), 1, {width:100,ease:Linear.easeNone});
-
-	// Slide effect
-	var scroller = new ScrollMagic.Controller,
-	sections=["#contact-info","#tech-skills","#work-exp", "#ed-bg", "#prev-work", "#personal-info"];
-
-	if(!Modernizr.touch){
-		sections.forEach(
-			function(t,r){
-				var sections=e(t).attr("id");
-				new ScrollMagic.Scene({triggerElement:t,triggerHook:.75}).setClassToggle("#"+sections,"is-active").addTo(scroller)
-			});
-		var a=new TimelineMax;
-		a.to(e("#intro header, #intro section"), .2, {autoAlpha:0,ease:Power1.easeNone}).to(e("#intro"), 1.4, {y:"20%", ease:Power1.easeOut},"-=0.2");
-		{
-			new ScrollMagic.Scene({triggerElement:"#intro",triggerHook:0,duration:"100%"}).setTween(a).addTo(scroller)
-		}
-	}
 }(jQuery);
