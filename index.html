@@ -7,6 +7,9 @@
 
     <link rel="icon" href="resources/icon.ico" />
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/utilities.js"></script>
@@ -30,7 +33,7 @@
 
     <!-- Content -->
     <div class="content">
-        <article id="intro">
+        <article class="intro">
             <header class="title">
                 <h1>INTRO</h1>
                 <hr/>
@@ -42,25 +45,24 @@
             </section>
         </article>
 
-        <article id="contact-info" class="content-block">
-            <header class="slideInUp">
+        <article id="contact-info">
+            <header>
                 <h1>CONTACT INFO</h1>
                 <hr/>
             </header>
-            <section class="slideInUp slideInUp2">
-                <p>Talk to me, I don't bite</p>
-                <br />
+            <section>
+                <p>Talk to me, I don't bite:</p>
                 <p>&nbsp;&nbsp;&nbsp;&nbsp;Phone: (514) 572-5226</p>
                 <span>&nbsp;&nbsp;&nbsp;&nbsp;Email: <a href="mailto:jeegnathebug@gmail.com">jeegnathebug@gmail.com</a></span>
             </section>
         </article>
 
-        <article id="tech-skills" class="content-block">
-            <header class="slideInUp">
+        <article id="tech-skills">
+            <header>
                 <h1>TECHNICAL SKILLS</h1>
                 <hr/>
             </header>
-            <section class="slideInUp slideInUp2">
+            <section>
                 <table>
                     <thead>
                         <tr>
@@ -91,7 +93,7 @@
                         </tr>
                         <tr>
                             <td></td>
-                            <td></td>
+                            <td>SQLPL</td>
                             <td>AJAX</td>
                             <td></td>
                         </tr>
@@ -100,80 +102,80 @@
             </section>
         </article>
         
-        <article id="work-exp" class="content-block">
-            <header class="slideInUp">
+        <article id="work-exp">
+            <header>
                 <h1>WORK EXPERIENCE</h1>
                 <hr/>
             </header>
-            <section class="slideInUp slideInUp2">
+            <section>
                 <table>
                     <tr>
                         <th>Shatner Solutions</th>
-                        <td class="info">Social Media Head</td>
+                        <td class="table-info">Social Media Head</td>
                         <td class="date">January 2016 - April 2016</td>
                     </tr>
                     <tr>
                         <th>SOM Research &amp; Surveys</th>
-                        <td class="info">Telephone Interviewer</td>
+                        <td class="table-info">Telephone Interviewer</td>
                         <td class="date">September 2015 - November 2015</td>
                     </tr>
                     <tr>
                         <th>CLSC de Saint-Michel</th>
-                        <td class="info">Volunteer Work</td>
+                        <td class="table-info">Volunteer Work</td>
                         <td class="date">December 2013</td>
                     </tr>
                     <tr>
                         <th>Sun Youth</th>
-                        <td class="info">Volunteer Work</td>
+                        <td class="table-info">Volunteer Work</td>
                         <td class="date">March 2012</td>
                     </tr>
                 </table>
             </section>
         </article>
 
-        <article id="ed-bg" class="content-block">
-            <header class="slideInUp">
+        <article id="ed-bg">
+            <header>
                 <h1>EDUCATIONAL BACKGROUND</h1>
                 <hr/>
             </header>
-            <section class="slideInUp slideInUp2">
+            <section>
                 <table>
                     <tr>
                         <th>Dawson College</th>
-                        <td class="info">Computer Science and Technology</td>
+                        <td class="table-info">Computer Science and Technology</td>
                         <td class="date">2014 - 2017</td>
                     </tr>
                     <tr>
                         <th>Laurier MacDonald High School</th>
-                        <td class="info"></td>
+                        <td class="table-info"></td>
                         <td class="date">2011 - 2014</td>
                     </tr>
                     <tr>
                         <th>John Paul I High School</th>
-                        <td class="info"></td>
+                        <td class="table-info"></td>
                         <td class="date">2009 - 2011</td>
                     </tr>
                 </table>
             </section>
         </article>
 
-        <article id="prev-work" class="content-block">
-            <header class="slideInUp">
+        <article id="prev-work">
+            <header>
                 <h1>PREVIOUS WORK</h1>
                 <hr/>
             </header>
-            <section class="slideInUp slideInUp2">
+            <section>
                 <p>Some of my previous works include a <a id="popupLink">Memory Game</a> created in HTML5, CSS3 and JavaScript, and this website.</p>
                 <p>I've also made some computer programs like Tetris and Battleship that can be found <a href="http://github.com/jeegnathebug" target="_blank">here</a>.</p>
             </section>
         </article>
 
-        <article id="personal-info" class="content-block">
-            <header class="slideInUp">
+        <article id="personal-info">
+            <header>
                 <h1>PERSONAL INTERESTS</h1>
                 <hr/>
             </header>
-            <section class="slideInUp slideInUp2">
+            <section>
                 <p>When I'm not programming, I like to read mystery and fantasy novels, bake cakes and muffins, and make awesome illustrations.</p>
                 <p>That's about it for me. Thank you for reading :)</p>
             </section>
@@ -274,16 +276,13 @@
 
         <div class="copyright">
             <p>No contents Copyright 2016 &copy; <a href="http://www.github.com/jeegnathebug">jeegnathebug</a></p>
-            <p>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></p>
+            <p>Icons made by <a href="http://www.freepik.com" title="Freepik" target="_blank">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon" target="_blank">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></p>
         </div>
         
     </footer>
 
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.2.0/imagesloaded.pkgd.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
     <script src="js/main.js"></script>
 </body>
 </HTML>
