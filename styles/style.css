@@ -70,9 +70,8 @@
 .header-title {
 	line-height: 20vh;
 
-	font-size: 8vh;
+	font-size: 80px;
 	font-family: "Josefin Slab";
-	text-decoration: none;
 
 	height: 20vh;
 }
@@ -89,9 +88,11 @@
 
 /* Body */
 body {
-	background-color: rgb(50,49,59);
+	background-color: rgb(50,50,60);
 
 	font-family: "Josefin Sans";
+
+	min-width: 900px;
 }
 
 hr {
@@ -102,8 +103,8 @@ hr {
 
 /* Content */
 .content {
-	margin-left: 10vw;
-	margin-right: 20vw;
+	margin-left: 10%;
+	margin-right: 20%;
 
 	font-size: 25px;
 }
@@ -125,8 +126,8 @@ hr {
 }
 
 .content h1 {
-	font-size: 5vh;
-	line-height: 6vh;
+	font-size: 50px;
+	line-height: 55px;
 
 	text-align: right;
 }
@@ -146,13 +147,8 @@ hr {
 	cursor: pointer;
 }
 
-#intro {
+.intro {
 	min-height: 80vh;
-}
-
-.content-block {
-	visibility: hidden;
-	opacity: 0;
 }
 
 .content table {
@@ -161,41 +157,36 @@ hr {
 	font-size: 25px;
 }
 
-.content tr {
+.content td, .content th {
+	padding: 5px 0 0 5px;
 	text-align: right;
 }
 
-.content table .info {
-	text-align: left;
-}
-
 .content th {
-	padding: 0.5vh 0.5vw;
-
 	font-weight: bold;
 }
 
-.content td {
-	padding: 0.5vh 0.5vw;
+.content table .table-info {
+	text-align: left;
 }
 
-.date {
+.content table .date {
 	text-align: right;
 }
 
 /* Image */
 .picture {
-	height: 27.5vh;
-	width: 27.5vh;
+	height: 275px;
+	width: 275px;
 
 	float: right;
 
 	border-radius: 100%;
 	border-style: solid;
-	border-width: 0.4vh;
+	border-width: 3px;
 	border-color: rgb(55,175,195);
 
-	margin: 1vh 1vw;
+	margin: 10px;
 }
 
 /* Modal */
@@ -270,7 +261,7 @@ hr {
 
 	min-width: 15vw;
 
-	position: fixed;
+	position: fixed;	
 	top: 40vh;
 	right: 2vw;
 
@@ -298,12 +289,14 @@ hr {
 /* Footer */
 .footer {
 	height: 15vh;
+
+	text-align: center;
 }
 
 /* Social links */
 .social-links {
-	width: 30%;
-	height: 9vh;
+	width: 50%;
+	height: 60%;
 
 	margin: auto;
 }
@@ -313,13 +306,18 @@ hr {
 
 	float: left;
 	width: 25%;
+	height: 100%;
+
+	vertical-align: middle;
 }
 
 .social-icon {
-	min-height: 4vh;
-	max-height: 4vh;
-	min-width: 4vh;
-	max-width: 4vh;
+	min-height: 40px;
+	max-height: 40px;
+	min-width: 40px;
+	max-width: 40px;
+
+	margin: auto;
 
 	-webkit-filter: saturate(0%);
 	filter: saturate(0%);
@@ -337,13 +335,12 @@ hr {
 
 /* Copyright notice */
 .copyright {
-	height: 6vh;
+	padding: auto;
+	height: 40%;
 	width: 100%;
 
 	font-family: "Lucida Console", monospace;
 	font-size: 15px;
-
-	text-align: center;
 }
 
 .copyright a {
@@ -352,36 +349,6 @@ hr {
 
 .copyright a:hover {
 	color: rgb(35,225,115);
-}
-
-/* Slide up animation */
-.slideInUp {
-	visibility: hidden;
-	opacity: 0;
-
-	-webkit-transition: all 0.7s ease-out;
-	transition: all 0.7s ease-out;
-	-webkit-transform: translate3d(0, 50px, 0);
-	transform: translate3d(0, 50px, 0);
-}
-
-.is-active .slideInUp {
-	visibility: visible;
-	opacity: 1;
-
-	-webkit-transform: translate3d(0, 0, 0);
-	transform: translate3d(0, 0, 0);
-}
-
-.slideInUp.slideInUp2 {
-	-webkit-transition-delay: 0.2s;
-	transition-delay: 0.2s;
-}
-
-/* When section is in screen */
-.content-block.is-active {
-	visibility: visible;
-	opacity: 1;
 }
 
 /* highlight color */
@@ -412,7 +379,7 @@ hr {
 }
 
 ::-webkit-scrollbar-track {
-	background-color: rgba(0,0,0,0.2);
+	background-color: rgb(37,36,44);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -421,4 +388,8 @@ hr {
 
 ::-webkit-scrollbar-thumb:window-inactive {
 	background: rgba(236,63,140,0.4);
+}
+
+::-webkit-scrollbar-corner {
+      background-color: rgb(37,36,44);
 }
