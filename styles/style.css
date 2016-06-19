@@ -1,11 +1,17 @@
 * {
+	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
+	border: 0;
 
 	color: rgba(255,255,255,0.9);
 	text-decoration: none;
 	list-style-type: none;
+	line-height: 25px;
+}
+
+body * {
+	margin: 0;
 }
 
 /* Loading screen */
@@ -79,11 +85,15 @@
 .t1 {
 	font-weight: 700;
 	color: rgb(236,63,140);
+
+	line-height: 20vh;
 }
 
 .t2 {
 	font-weight: 400;
 	color: rgb(57,177,198);
+
+	line-height: 20vh;
 }
 
 /* Body */
@@ -101,17 +111,35 @@ hr {
     border-color: rgb(55,175,195);
 }
 
+a {
+	color: rgba(255,255,255,0.9);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
 /* Content */
 .content {
 	margin-left: 10%;
 	margin-right: 20%;
 
+	color: rgba(255,255,255,0.9);
 	font-size: 25px;
 }
 
 .content header {
 	padding-top: 2.5vh;
 	padding-bottom: 2.5vh;
+}
+
+.content h1 {
+	font-size: 50px;
+	font-weight: bold;
+	line-height: 55px;
+
+	text-align: right;
 }
 
 .content article {
@@ -123,13 +151,6 @@ hr {
 	padding: 2.5vh 0;
 
 	text-align: justify;
-}
-
-.content h1 {
-	font-size: 50px;
-	line-height: 55px;
-
-	text-align: right;
 }
 
 .content p {
@@ -147,7 +168,7 @@ hr {
 	cursor: pointer;
 }
 
-.intro {
+#intro {
 	min-height: 80vh;
 }
 
@@ -269,9 +290,11 @@ hr {
 	text-align: right;
 }
 
-.nav-item span {
-	color: rgb(177,177,177);
+.nav li {
+	line-height: 25px;
+}
 
+.nav-item span {
 	-moz-transition: opacity 0.3s ease-in-out;
 	-webkit-transition: opacity 0.3s ease-in-out;
 	-o-transition: opacity 0.3s ease-in-out;
@@ -291,6 +314,10 @@ hr {
 	height: 15vh;
 
 	text-align: center;
+}
+
+.footer a {
+	color: rgba(255,255,255,0.9);
 }
 
 /* Social links */
