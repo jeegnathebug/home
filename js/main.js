@@ -33,7 +33,7 @@
 	}
 
 	var	counter = 0;
-	var max = e(".intro").length;
+	var max = e("#intro").length;
 	var current_progress = 0;
 
 	e(".picture").imagesLoaded().progress(load);
