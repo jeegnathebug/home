@@ -21,7 +21,7 @@ function init() {
     addEvent(window, "click", clickClose);
     
     // Add year to footer
-    $('#year').html = new Date().getFullYear();
+    $('#year').html(new Date().getFullYear());
 }
 
 function open() {
