@@ -19,6 +19,9 @@ function init() {
     addEvent(g.btnClose, "click", close);
     // close from anywhere
     addEvent(window, "click", clickClose);
+    
+    // Add year to footer
+    $('#year').html = new Date().getFullYear();
 }
 
 function open() {
